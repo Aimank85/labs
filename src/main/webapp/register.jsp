@@ -9,39 +9,58 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/index.js"></script>
         <title>Sign up</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
-    <body>
-        <% 
-            String emailError = (String)session.getAttribute("emailError");
-            String passError = (String)session.getAttribute("passError");
+    <body onload="startTime()">
+        <%
+            String emailError = (String) session.getAttribute("emailError");
+            String passError = (String) session.getAttribute("passError");
         %>
-        <nav class="nav"> 
-            <ul class="menu"> 
-                <li><a href="index.jsp">home</a> </li>
-                <li><a href="login.jsp">login</a></li>
-                <li><a href="strings.jsp">strings</a></li>
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
-        </nav>
-        
-        <div class="signup">
-            <form method="POST" action="welcome.jsp">
-                <table class="table">
-                    <caption class="caption">Sign Up</caption>
-                    <tr><td class="label">Name: </td><td><input class="input-text" type="text" name="name"/></td></tr>
-                    <tr><td class="label">Email: </td><td><input class="input-text" type="text" name="email"  /></td></tr>
-                    <tr><td class="label">Password: </td><td><input class="input-text" type="password" name="password" /></td></tr>
-                    <tr><td class="label">DOB: </td><td><input class="input-text" type="date" name="dob"/></td></tr>
-                    <tr>
-                        <td> </td>
-                        <td class="form-actions">
-                            <a class="button" href="index.jsp">Cancel</a>
-                            <input class="button" type="submit" value="Sign Up" />
-                        </td>
-                    </tr>
-                </table>
-            </form>
+
+            <nav class="nav"> 
+                <img class="logo" width="150px" src="css/logo.png" >
+                <ul class="menu"> 
+                    <li><a href="index.jsp">home</a> </li>
+                    <li><a href="login.jsp">login</a></li>
+                    <li><a href="strings.jsp">strings</a></li>
+                </ul>
+            </nav>
+
+            <div class="signup">
+                <form method="POST" action="welcome.jsp">
+                    <table class="input-table">
+                        <caption class="caption">Sign Up</caption>
+                        <tr><td>Name: </td><td><input type="text" name="name" /></td></tr>
+                        <tr><td>Email: </td><td><input class="error-message" type="text" name="email" placeholder="<%= (emailError != null) ? emailError : ""%>" /></td></tr>
+                        <tr><td>Password: </td><td><input class="error-message" type="password" name="password" placeholder="<%= (passError != null) ? passError : ""%>" /></td></tr>
+                        <tr><td>DOB: </td><td><input type="date" name="dob"/></td></tr>
+                        <tr>
+                            <td> </td>
+                            <td class="form-actions">
+                                <a class="button" href="index.jsp">Cancel</a>
+                                <input class="button" type="submit" value="Sign Up" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
+        <div id="clock" class="footer"></div>
     </body>
 </html>

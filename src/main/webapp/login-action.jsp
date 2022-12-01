@@ -12,24 +12,52 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Action</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
-    <body>
-        <% 
+    <body onload="startTime()">
+        <%
             String email = request.getParameter("email");
             String password = request.getParameter("password");
             Users users = (Users) session.getAttribute("users");
-            User user = users.user(email, password); 
+            User user = users.user(email, password);
         %>
-        
-        <% if(user != null){ %>
+
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            <nav class="nav"> 
+                <img class="logo" width="150px" src="css/logo.png" >
+                <ul class="menu"> 
+                    <li><a href="index.jsp" style="margin-left: -100px;">Home</a> </li>
+                </ul>
+            </nav>
+            
+            <% if (user != null) {%>
+            <div class="inner-wrapper">
             <table class="table">
-                <caption>User Information</caption>
-                <tr><td>Email: </td><td> <%= email %></td></tr>
-                <tr><td>Password: </td><td> <%= password %></td></tr>
+                <tr><td><h2>User Information</h2></td></tr>
+                <tr><td>Email: </td><td> <%= email%></td></tr>
+                <tr><td>Password: </td><td> <%= password%></td></tr>
             </table>
-        <%}else {%>
-            <p>User does not exist</p>
-        <%}%>
+            </div>
+            <%} else {%>
+                <p class="login-action-error-message">User does not exist</p>
+            <%
+                session.setAttribute("error", "User not found");
+                response.sendRedirect("login.jsp");
+            }
+            %>
+        </div>
     </body>
 </html>

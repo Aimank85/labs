@@ -13,5 +13,11 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i;};  // add zero in front of numbers < 10
   return i;
 }
-$('.strings-input').on('change', function () { $(this).closest('form').submit(); });
+$('.strings-input').on('change', function () { 
+    $(this).closest('form').submit(); 
+});
 
+
+$('.menu-button').on('click', function () { 
+     $('.icon-menu').hide();
+});

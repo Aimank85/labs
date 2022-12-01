@@ -5,6 +5,8 @@
  */
 package com.model;
 
+import java.util.Random;
+
 /**
  *
  * @author 236333
@@ -21,6 +23,7 @@ public class User {
     }
 
     public User(String name, String email, String password, String DOB) {
+        this.ID = (new Random()).nextInt(999);
         this.name = name;
         this.email = email;
         this.password = password;
