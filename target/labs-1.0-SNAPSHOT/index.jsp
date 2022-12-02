@@ -16,15 +16,7 @@
     </head>
     <body onload="startTime()">
 
-        <!--        <header class="video-header">
-                    <video width="100%" src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" autoplay loop playsinline muted></video>
-                </header>-->
 
-<!--        <div class="context">
-            <h1>Pure Css Animated Background</h1>
-        </div>-->
-
-        <img class="index-logo" width="600px" src="css/logo.png" >
 
         <div class="area" >
             <ul class="circles">
@@ -39,10 +31,13 @@
                 <li></li>
                 <li></li>
             </ul>
-            
+            <div class="index-img"> 
+                <img class="index-logo" width="600px" src="css/logo.png" >
+            </div>
+
             <!--<div class="wrapper">-->
             <div class="icon-menu">
-                
+
                 <div class="icons">
                     <div class="icons-div-1 icons-div">
                         <!-- Home -->
@@ -65,17 +60,17 @@
             <!--</div>-->
         </div >
 
-<!--        <div class="wrapper">
-                        <nav class="nav"> 
-                            <ul class="menu"> 
-                                <li><a href="register.jsp">register</a> </li>
-                                <li><a href="login.jsp">login</a></li>
-                                <li><a href="strings.jsp">strings</a></li>
-                            </ul>
-                        </nav> 
-
-            
-        </div>
+        <!--        <div class="wrapper">
+                                <nav class="nav"> 
+                                    <ul class="menu"> 
+                                        <li><a href="register.jsp">register</a> </li>
+                                        <li><a href="login.jsp">login</a></li>
+                                        <li><a href="strings.jsp">strings</a></li>
+                                    </ul>
+                                </nav> 
+        
+                    
+                </div>
         -->
         <div id="clock" class="footer"></div>
     </body>

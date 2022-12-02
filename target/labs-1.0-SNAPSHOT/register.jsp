@@ -46,10 +46,10 @@
                 <form method="POST" action="welcome.jsp">
                     <table class="input-table">
                         <caption class="caption">Sign Up</caption>
-                        <tr><td>Name: </td><td><input type="text" name="name" /></td></tr>
-                        <tr><td>Email: </td><td><input class="error-message" type="text" name="email" placeholder="<%= (emailError != null) ? emailError : ""%>" /></td></tr>
-                        <tr><td>Password: </td><td><input class="error-message" type="password" name="password" placeholder="<%= (passError != null) ? passError : ""%>" /></td></tr>
-                        <tr><td>DOB: </td><td><input type="date" name="dob"/></td></tr>
+                        <tr><td>Name: </td><td><input class="input-text" type="text" name="name" /></td></tr>
+                        <tr><td>Email: </td><td><input class="error-message input-text" type="text" name="email" placeholder="<%= (emailError != null) ? emailError : ""%>" /></td></tr>
+                        <tr><td>Password: </td><td><input class="error-message input-text" type="password" name="password" placeholder="<%= (passError != null) ? passError : ""%>" /></td></tr>
+                        <tr><td>DOB: </td><td><input class="input-text" type="date" name="dob"/></td></tr>
                         <tr>
                             <td> </td>
                             <td class="form-actions">
