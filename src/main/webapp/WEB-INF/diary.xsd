@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.xmldemo.com/labs"
+           xmlns="http://www.xmldemo.com/labs"
+           elementFormDefault="qualified">
+    
+    <xs:simpleType name="nameFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z a-z]*" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="dobFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,2}/\d{1,2}/\d{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="emailFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z.a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+   
+    
+    <xs:simpleType name="descriptionFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z a-z\.]*" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="titleFormat">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z a-z\.]*" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="ratingFormat">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-5]{1}" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="diary">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="profile">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="nameFormat" name="name"/>
+                            <xs:element name="introduction"/>
+                            <xs:element type="dobFormat" name="dob"/>
+                            <xs:element type="emailFormat" name="email"/>
+                            
+                            <xs:element   name="interests">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element   name="interest"  maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="nameFormat"   name="name"/>
+                                                    <xs:element type="descriptionFormat"   name="description"/>
+                                                       
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>   
+                            </xs:element>
+
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="entry" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="dobFormat" name="date"/>
+                            <xs:element type= "titleFormat" name="title" />
+                            <xs:element type="ratingFormat" name="rating"/>
+                            <xs:element name="body"/> 
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

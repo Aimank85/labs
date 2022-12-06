@@ -32,7 +32,7 @@
                 <li></li>
             </ul>
             <div class="index-img"> 
-                <img class="index-logo" width="600px" src="css/logo.png" >
+                <img class="index-logo" width="400px" src="css/logo.png" >
             </div>
 
             <!--<div class="wrapper">-->

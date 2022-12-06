@@ -54,7 +54,7 @@
                 <li></li>
             </ul>
             <nav class="nav"> 
-                <img class="logo" width="150px" src="css/logo.png" >
+                <img class="logo" width="100px" height="45px" src="css/logo.png" >
                 <ul class="menu"> 
                     <li><a href="main.jsp">Main</a> </li>
                     <li><a href="logout.jsp">logout</a></li>

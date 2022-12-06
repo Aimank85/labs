@@ -34,7 +34,7 @@
             </ul>
 
             <nav class="nav"> 
-                <img class="logo" width="150px" src="css/logo.png" >
+                <img class="logo" width="100px" height="45px" src="css/logo.png" >
                 <ul class="menu"> 
                     <li><a href="index.jsp">home</a> </li>
                     <li><a href="login.jsp">login</a></li>
