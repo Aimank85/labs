@@ -405,9 +405,19 @@ input:active{
     /*    position: absolute;
         top: 10%;
         left: 35%;*/
-    width: 600;
+    width: 600px;
     margin: auto;
 }
+
+/*      Logout      */
+
+.termination {
+    margin-top: 100px; 
+    margin-left: 50px; 
+    color: #000;
+}
+
+
 /*       --- Animation ---     */
 
 

@@ -12,10 +12,11 @@
         <script type="text/javascript" src="js/index.js"></script>
         <title>Sign up</title>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/style1.css"/>
     </head>
     <body onload="startTime()">
         <%
+            String error = (String) session.getAttribute("error");
             String emailError = (String) session.getAttribute("emailError");
             String passError = (String) session.getAttribute("passError");
         %>
@@ -45,7 +46,7 @@
             <div class="signup">
                 <form method="POST" action="welcome.jsp">
                     <table class="input-table">
-                        <caption class="caption">Sign Up</caption>
+                        <caption class="caption">Sign Up <span class="succes-message"> <%= (error != null) ? error : "" %> </span></caption>
                         <tr><td>Name: </td><td><input class="input-text" type="text" name="name" /></td></tr>
                         <tr><td>Email: </td><td><input class="error-message input-text" type="text" name="email" placeholder="<%= (emailError != null) ? emailError : ""%>" /></td></tr>
                         <tr><td>Password: </td><td><input class="error-message input-text" type="password" name="password" placeholder="<%= (passError != null) ? passError : ""%>" /></td></tr>

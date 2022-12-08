@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Logout</title>
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/style1.css"/>
     </head>
     <body onload="startTime()">
         <div class="area" >
@@ -28,7 +28,7 @@
                 </ul>
             </nav>
 
-            <h1 style="margin-top: 100px; margin-left: 50px; color: #ff914d">You have been logged out - Thank you!</h1>
+            <h2 class="termination">You have been logged out - Thank you!</h2>
         </div>
     </body>
 </html>

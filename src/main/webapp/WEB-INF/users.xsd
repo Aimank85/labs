@@ -2,8 +2,8 @@
 
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.xmldemo.com/demo"
-           xmlns="http://www.xmldemo.com/demo"
+           targetNamespace="http://www.xmllabs.com/labs"
+           xmlns="http://www.xmllabs.com/labs"
            elementFormDefault="qualified">
     
     <!--    User ID format-->
@@ -27,13 +27,13 @@
     
     <xs:simpleType name="passwordFormat">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[A-Z][a-z]{6,}\d{3,}" />
+            <xs:pattern value="[A-Z][a-z]{6,}\d{2,}" />
         </xs:restriction>
     </xs:simpleType> 
     
     <xs:simpleType name="dobFormat">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{4}-\d{2}-\d{2}" />
+            <xs:pattern value="\d{2}/\d{2}/\d{4}" />
         </xs:restriction>
     </xs:simpleType>
     

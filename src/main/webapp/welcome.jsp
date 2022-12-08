@@ -4,6 +4,8 @@
     Author     : 236333
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
 <%@page import="com.model.Users"%>
 <%@page import="com.model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,12 +13,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="js/index.js"></script>
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/style1.css"/>
         <script type="text/javascript" src="js/index.js"></script>
         <title>Welcome</title>
     </head>
     <body onload="startTime()">
+        <% String filename = application.getRealPath("/WEB-INF/users.xml");%>
+        <jsp:useBean id="userDAO" class="com.model.dao.UserDAO" scope="application">
+            <jsp:setProperty name="userDAO" property="filePath" value="<%=filename%>"/>
+        </jsp:useBean>
         <%
             String name = request.getParameter("name");
             String email = request.getParameter("email");
@@ -28,16 +33,26 @@
 
             session.setAttribute("emailError", email.matches(emailRegEx) ? "" : "Incorrect email format");
             session.setAttribute("passError", password.matches(passRegEx) ? "" : "Incorrect password format");
+            
 
             if (!email.matches(emailRegEx) || (!password.matches(passRegEx))) {
                 response.sendRedirect("register.jsp");
             } else {
                 User user = new User(name, email, password, dob);
-                Users users = new Users();
-                users.add(user);
+                Users users = userDAO.getUsers();
+                
+                User userXML = users.user(user.getEmail());
 
-                session.setAttribute("user", user);
-                session.setAttribute("users", users);
+//                session.setAttribute("error", (userXML == null) ? "" : "User already exists");
+                
+                if (userXML != null) {
+                    session.setAttribute("error", "User already exists");
+                    response.sendRedirect("register.jsp");
+                } else {
+                    users.add(user);
+                    userDAO.save(users, filename);
+                    session.setAttribute("user", user);
+                }
             }
         %>
         <div class="area" >

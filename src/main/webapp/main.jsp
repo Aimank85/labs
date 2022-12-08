@@ -4,8 +4,7 @@
     Author     : 236351
 --%>
 
-
-
+<%@page import="com.model.Users"%>
 <%@page import="java.util.List"%>
 <%@page import="com.model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,20 +13,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/style1.css"/>
         <script type="text/javascript" src="js/index.js"></script>
         <title>Main</title>
     </head>
     <body onload="startTime()" >
+        <% String filename = application.getRealPath("/WEB-INF/users.xml");%>
+        <jsp:useBean id="userDAO" class="com.model.dao.UserDAO" scope="application">
+            <jsp:setProperty name="userDAO" property="filePath" value="<%=filename%>"/>
+        </jsp:useBean>
+        
         <%
             User user = (User) session.getAttribute("user");
 
-            String name = request.getParameter("name");
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            String dob = request.getParameter("dob");
+            Users users = userDAO.getUsers();
+           
+            userDAO.update(users, user);
+            
+            session.setAttribute("user", user);
 
-//            session.setAttribute("user", user);
         %>
         <div class="area" >
             <ul class="circles">

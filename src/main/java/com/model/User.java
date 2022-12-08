@@ -1,18 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.model;
 
+import java.io.Serializable;
 import java.util.Random;
+import javax.xml.bind.annotation.*;
 
-/**
- *
- * @author 236333
- */
-public class User {
-
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "user")
+public class User implements Serializable{
     private int ID;
     private String name;
     private String email;
@@ -23,7 +17,7 @@ public class User {
     }
 
     public User(String name, String email, String password, String DOB) {
-        this.ID = (new Random()).nextInt(999);
+        this.ID = (new Random()).nextInt(999999);
         this.name = name;
         this.email = email;
         this.password = password;
@@ -48,6 +42,10 @@ public class User {
 
     public boolean match(String email) {
         return this.email.equals(email);
+    }
+    
+    public boolean match(User other){
+        return this.ID == other.ID;
     }
 
     public int getID() {

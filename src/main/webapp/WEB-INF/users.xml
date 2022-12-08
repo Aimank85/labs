@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<users xmlns="http://www.xmldemo.com/demo"
+<!--<users xmlns="http://www.xmllabs.com/labs"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.xmldemo.com/demo users.xsd">
+       xsi:schemaLocation="http://www.xmllabs.com/labs users.xsd">-->
+       
+<users>
     <user>
         <ID>100000</ID>
         <name>John Smith</name>
         <email>john.smith@uts.com</email>
         <password>Helloworld123</password>
-        <dob>1990-12-05</dob>        
+        <dob>05/12/1990</dob>        
     </user>
     <user>
         <ID>100001</ID>
         <name>David Jones</name>
         <email>alen.david@example.com</email>
         <password>Demopass123</password>
-        <dob>2002-07-11</dob>        
+        <dob>11/07/2002</dob>        
     </user>
 </users>
