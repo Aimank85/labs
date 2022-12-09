@@ -17,7 +17,7 @@
         
             <nav class="nav string-nav">
                 <div class="strings-left-menu">
-                    <img class="logo" width="100px" height="45px" src="css/logo.png" style="margin-top: -13px;" >
+                    <img class="logo" width="200px" src="css/Cubik.png"" >
                     <ul class="menu strings-menu">
                         <li><a href="index.jsp" >home</a> </li>
                     </ul>

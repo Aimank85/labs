@@ -57,7 +57,7 @@
         %>
         
             <nav class="nav"> 
-                <img class="logo" width="100px" height="45px" src="css/logo.png" >
+                <img class="logo" width="200px" src="css/Cubik.png" >
                 <ul class="menu"> 
                     <li><a href="main.jsp">Main</a> </li>
                     <li><a href="logout.jsp">logout</a></li>

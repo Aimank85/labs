@@ -9,7 +9,7 @@
     <body onload="startTime()">
 
             <nav class="nav"> 
-                <img class="logo" width="100px" height="45px"src="css/logo.png" >
+                <img class="logo" width="200px" src="css/Cubik.png">
                 <ul class="menu">
                     <li><a href="index.jsp">home</a> </li>
                 </ul>

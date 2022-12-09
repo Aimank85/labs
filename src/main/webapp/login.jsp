@@ -19,35 +19,58 @@
             String error = (String) session.getAttribute("error");
         %>
 
-      
 
-            <nav class="nav"> 
-                <img class="logo" width="100px" height="45px"src="css/logo.png" >
-                <ul class="menu"> 
-                    <li><a href="index.jsp">home</a> </li>
-                    <li><a href="register.jsp">register</a></li>
-                    <li><a href="strings.jsp">strings</a></li>
-                </ul>
-            </nav>
 
-            <div class="signup">
-                <form method="POST" action="login-action.jsp">
-                    <table class="input-table">
-                        <caption class="caption">Login <span class="succes-message"><%= (error != null) ? error : ""%></span></caption>
-                        <tr><td class="label">Email: </td><td><input class="input-text" type="text" name="email"  /></td></tr>
-                        <tr><td class="label">Password: </td><td><input class="input-text" type="password" name="password" /></td></tr>
-                        <tr>
-                            <td> </td>
-                            <td class="form-actions">
-                                <a class="button" href="index.jsp">Cancel</a>
-                                <input class="button" type="submit" value="Login" />
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+        <!--       <nav class="nav"> -->
+        <!--                <img class="logo" width="100px" height="45px"src="css/logo.png" >-->
+        <!--                <ul class="menu"> 
+                            <li><a href="index.jsp">home</a> </li>
+                            <li><a href="register.jsp">register</a></li>-->
+        <!--                    <li><a href="strings.jsp">strings</a></li>
+                        </ul>
+                    </nav>-->
+        <div class="wrapper">
+            <div class="menu-list">
+                <div class="index-left-menu">
+                    <div class="index-img"> 
+                        <img class="logo" width="200px" src="css/Cubik.png" >
+                    </div>
+                    <div class="signup">
+                        <form method="POST" action="login-action.jsp">
+                            <table class="input-table">
+                                <caption class="caption">Login <span class="succes-message"><%= (error != null) ? error : ""%></span></caption>
+                                <tr><td class="label">Email: </td><td><input class="input-text" type="text" name="email"  /></td></tr>
+                                <tr><td class="label">Password: </td><td><input class="input-text" type="password" name="password" /></td></tr>
+                                <tr>
+                                    <td> </td>
+                                    <td class="form-actions">
+                                        <a class="button" href="index.jsp">Cancel</a>
+                                        <input class="button" type="submit" value="Login" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div> 
+                </div> 
+                <div class="index-right-menu">
+                    <ul class="i-menu"> 
+                        <li class="top-li i-menu-li"><a href="index.jsp">Home</a> </li>
+                        <li class="i-menu-li"><a href="register.jsp">Register</a></li>
+                        <li class="i-menu-li"><a href="strings.jsp">Strings</a></li>
+                    </ul>
+                </div>
+
+
+
+
             </div>
-            <div id="clock" class="footer"></div>
+        </div>
 
-       
+
+
+
+        <div id="clock" class="footer"></div>
+
+
     </body>
 </html>
