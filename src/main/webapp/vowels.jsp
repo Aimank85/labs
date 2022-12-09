@@ -29,25 +29,29 @@
             }
         %>
 
-        <table class="table table-bordered table-striped vowels-table" style="margin-top: 50px;">
-            <thead class="vowel-table"><th>String</th><th>Compressed</th><th>Spaces</th></thead>
-        <tr>
+        <div class="vowels-wrapper">
+            <table class="table table-bordered table-striped vowels-table" style="margin-top: 50px;">
+                <thead class="vowel-table"><th>String</th><th>Compressed</th><th>Spaces</th></thead>
+                <tr>
 
-            <td><%= s %></td>                            
-            <td><%= compressed(s) %></td>
-            <td><%= spaces(s) %></td>
-        </tr>     
+                    <td style="color: white;"><%= s%></td>                            
+                    <td style="color: white;"><%= compressed(s)%></td>
+                    <td style="color: white;"><%= spaces(s)%></td>
+                </tr>     
 
-        <table class="table table-bordered table-striped vowels-table">
-            <thead class="vowel-table"><th>Vowels</th><th>Frequency</th></thead>
-            <tr>
-                <% for (int i = 0; i < 5; i++) {%>
+            </table>
 
-                <td><%= vowels[i]%></td>                            
-                <td><%= frequency(s, vowels[i])%></td>
+            <table class="table table-bordered table-striped vowels-table">
+                <thead class="vowel-table"><th>Vowels</th><th>Frequency</th></thead>
+                <tr>
+                    <% for (int i = 0; i < 5; i++) {%>
 
-            </tr>     
-            <% }%>
-        </table>
-</body>
+                    <td style="color: white;"><%= vowels[i]%></td>                            
+                    <td style="color: white;"><%= frequency(s, vowels[i])%></td>
+
+                </tr>     
+                <% }%>
+            </table>
+        </div>
+    </body>
 </html>

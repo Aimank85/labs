@@ -81,7 +81,8 @@ body{
     text-decoration: none;
     font-family: Glacial indifference, sans-serif;
     font-weight: regular;
-    color: #f68ddc; 
+/*    color: #003152; */
+    color: #fff;
 }
 
 input{
@@ -229,14 +230,14 @@ input:active{
 .error-message::placeholder {
     font-weight: bold;
     opacity: .5;
-    color: #f68ddc;
+    color: #003152;
 }
 
 .login-action-error-message{
     width: 250px;
     height: 20px;
     margin-top: 100px;
-    color: #f68ddc;
+    color: #003152;
 }
 
 .label{
@@ -282,19 +283,38 @@ input:active{
     left: 15%;
 }
 /* ------  Strings Page ------ */
+.strings-menu-list {
+    width: 1100PX;
+    height: 80vh;
+    margin: auto;    
+    font-family: glacial indifference, sans-serif;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 10vh;
+    font-weight: 400;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+}
+
 .string-nav{
     display: flex;
     justify-content: space-between;
 }
 
 .strings-left-menu{
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.strings-input{
+.strings-right-menu{
+    width: 100%;
+    margin-top: 20px;
+    /*border: 1px solid red;*/
+}
 
+.strings-input{
     margin: auto 10px;
 }
 
@@ -317,13 +337,23 @@ input:active{
     margin-top: 10px;
 }
 
+.vowels-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+}
+
 .vowels-table{
     color: white;
+    width: 100%;
+    margin-top: 50px;
+    /*border: 1px solid green;*/
 }
 
 .vowel-table{
     /*background: #fff;*/
-    color: #f68ddc;
+    color: #fff;
 }
 
 .vowels-table .row{
@@ -333,7 +363,7 @@ input:active{
 }
 
 .succes-message{
-    color: #f68ddc;
+    color: #fff;
 }
 
 /*.wrapper {
@@ -403,7 +433,17 @@ input:active{
 }
 
 
+.social-media {
+    margin: auto;
+    width: 50%;
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
 
+.social-media-icon {
+    color: #fff;
+}
 
 
 /*.icon-menu {

@@ -26,6 +26,12 @@
                         <img class="index-logo" width="150px" src="css/Cubik.png" >
                     </div>
 
+                    <div class="social-media">
+                        <a href="index.jsp" class="social-media-icon"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                        <a href="index.jsp" class="social-media-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="index.jsp" class="social-media-icon"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    </div>
+
                 </div>
                 <div class="index-right-menu">
                     <ul class="i-menu"> 
@@ -35,27 +41,24 @@
                     </ul>
                 </div>
 
-
-
             </div>
+            <div id="clock" class="footer"></div>
         </div>
-        <div id="clock" class="footer"></div>
-    </div>
 
 
-    <!--        <div class="wrapper">
-                            <nav class="nav"> 
-                                <ul class="menu"> 
-                                    <li><a href="register.jsp">register</a> </li>
-                                    <li><a href="login.jsp">login</a></li>
-                                    <li><a href="strings.jsp">strings</a></li>
-                                </ul>
-                            </nav> 
-    
-                
-            </div>
-    -->
+        <!--        <div class="wrapper">
+                                <nav class="nav"> 
+                                    <ul class="menu"> 
+                                        <li><a href="register.jsp">register</a> </li>
+                                        <li><a href="login.jsp">login</a></li>
+                                        <li><a href="strings.jsp">strings</a></li>
+                                    </ul>
+                                </nav> 
+        
+                    
+                </div>
+        -->
 
-</body>
+    </body>
 
 </html>

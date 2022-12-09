@@ -29,10 +29,10 @@
             session.invalidate();
         %>
 
-        
-                       
             <nav class="nav"> 
-                <img class="logo" width="100px" height="45px"src="css/logo.png" >
+                <div class="index-img"> 
+                        <img class="logo" width="200px" src="css/Cubik.png" >
+                    </div>
                 <ul class="menu">
                     <li><a href="index.jsp">home</a> </li>
                 </ul>

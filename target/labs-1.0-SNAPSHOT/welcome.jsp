@@ -33,18 +33,16 @@
 
             session.setAttribute("emailError", email.matches(emailRegEx) ? "" : "Incorrect email format");
             session.setAttribute("passError", password.matches(passRegEx) ? "" : "Incorrect password format");
-            
 
             if (!email.matches(emailRegEx) || (!password.matches(passRegEx))) {
                 response.sendRedirect("register.jsp");
             } else {
                 User user = new User(name, email, password, dob);
                 Users users = userDAO.getUsers();
-                
+
                 User userXML = users.user(user.getEmail());
 
 //                session.setAttribute("error", (userXML == null) ? "" : "User already exists");
-                
                 if (userXML != null) {
                     session.setAttribute("error", "User already exists");
                     response.sendRedirect("register.jsp");
@@ -55,25 +53,45 @@
                 }
             }
         %>
-        
-            <nav class="nav"> 
-                <img class="logo" width="200px" src="css/Cubik.png" >
-                <ul class="menu"> 
-                    <li><a href="main.jsp">Main</a> </li>
-                    <li><a href="logout.jsp">logout</a></li>
-                </ul>
-            </nav>
 
-            <div class="inner-wrapper">
-                <table class="table">
-                    <tr><td><h2>User Information</h2></td></tr>
-                    <tr><td>Name: </td><td> <%= name%></td></tr>
-                    <tr><td>Email: </td><td> <%= email%></td></tr>
-                    <tr><td>Password: </td><td> <%= password%></td></tr>
-                    <tr><td>D.O.B.: </td><td> <%= dob%></td></tr>
-                </table>
+        <div class="wrapper">
+            <div class="menu-list">
+                <div class="index-left-menu">
+                    <div class="index-img"> 
+                        <img class="logo" width="150px" src="css/Cubik.png" >
+                    </div>
+                    <div class="signup">
+                        <form method="POST" action="welcome.jsp">
+                            <table class="input-table">
+                            <!--<table class="table">-->
+                                <tr><td><h2>Information</h2></td></tr>
+                                <tr><td>Name: </td><td> <%= name%></td></tr>
+                                <tr><td>Email: </td><td> <%= email%></td></tr>
+                                <tr><td>Password: </td><td> <%= password%></td></tr>
+                                <tr><td>D.O.B.: </td><td> <%= dob%></td></tr>
+                            </table>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="index-right-menu">
+                    <ul class="i-menu"> 
+
+                        <li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>
+                        <li class="i-menu-li"><a href="logout.jsp">logout</a></li>
+
+                    </ul>
+                </div>
+
+
+
             </div>
+
             <div id="clock" class="footer"></div>
-    
+        </div>
+
+
+       
+
     </body>
 </html>

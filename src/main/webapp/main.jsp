@@ -34,8 +34,47 @@
 
         %>
     
+        
+        <div class="wrapper">
+            <div class="menu-list">
+                <div class="index-left-menu">
+                    <div class="index-img"> 
+                        <img class="logo" width="150px" src="css/Cubik.png" >
+                    </div>
+                    <div class="signup">
+                        <form method="POST" action="welcome.jsp">
+                            <% if (user != null) {%>
+                                <table class="table">
+                                    <tr><td><h2>Information</h2></td></tr>
+                                    <tr><td>Name: </td><td> <%= user.getName()%></td></tr>
+                                    <tr><td>Email: </td><td> <%= user.getEmail()%></td></tr>
+                                    <tr><td>Password: </td><td> <%= user.getPassword()%></td></tr>
+                                    <tr><td>D.O.B.: </td><td> <%= user.getDOB()%></td></tr>
+                                </table>
+                                <%} else {%>
+                                <p>User does not exist</p>
+                                <%}%>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="index-right-menu">
+                    <ul class="i-menu"> 
+                        
+                        <li class="top-li i-menu-li"><a href="account.jsp">account</a> </li>
+                        <li class="i-menu-li"><a href="logout.jsp">logout</a></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <div id="clock" class="footer"></div>
+        </div>
             
-            <nav class="nav"> 
+<!--            <nav class="nav"> 
                 <img class="logo" width="200px" src="css/Cubik.png" >
                 <ul class="menu"> 
                     <li><a href="account.jsp">account</a> </li>
@@ -47,22 +86,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
-                                <% if (user != null) {%>
-                                <table class="table">
-                                    <tr><td><h2>User Information</h2></td></tr>
-                                    <tr><td>Name: </td><td> <%= user.getName()%></td></tr>
-                                    <tr><td>Email: </td><td> <%= user.getEmail()%></td></tr>
-                                    <tr><td>Password: </td><td> <%= user.getPassword()%></td></tr>
-                                    <tr><td>D.O.B.: </td><td> <%= user.getDOB()%></td></tr>
-                                </table>
-                                <%} else {%>
-                                <p>User does not exist</p>
-                                <%}%>
+                                
                         </div>
                     </div>            
                 </div>
                 <div id="clock" class="footer"></div>
-            </div>
+            </div>-->
       
     </body>
 </html>
