@@ -52,19 +52,7 @@
                 dob = user.getDOB();
             }
         %>
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        
 
             <nav class="nav"> 
                 <img class="logo" width="100px" height="45px" src="css/logo.png" >
@@ -91,7 +79,7 @@
                     </table>
                 </form>
             </div>
-        </div>
+        
         <div id="clock" class="footer"></div>
     </body>
 </html>

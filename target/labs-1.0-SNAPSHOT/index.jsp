@@ -12,67 +12,50 @@
         <link rel="stylesheet" href="css/style1.css"/>
         <title>Home page</title>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles.css"/>
+
     </head>
     <body onload="startTime()">
+        <!--        <div class="index-img"> 
+                    <img class="index-logo" width="400px" src="css/logo.png" >
+                </div>-->
 
-
-
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="index-img"> 
-                <img class="index-logo" width="400px" src="css/logo.png" >
-            </div>
-
-            <!--<div class="wrapper">-->
-            <div class="icon-menu">
-
-                <div class="icons">
-                    <div class="icons-div-1 icons-div">
-                        <!-- Home -->
-                        <a href="index.jsp" class="icons-link""><i class="fa-solid fa-house-chimney fa-2xl"></i><p style="margin-left: 5px"> Home </p></a>
-
-                        <!-- Register -->
-                        <a href="register.jsp" class="icons-link" "><i style="margin-left: 15px" class="fa-solid fa-right-to-bracket fa-2xl"></i> <p style="margin-left: -5px" >Register</p> </a>
-
+        <div class="wrapper">
+            <div class="menu-list">
+                <div class="index-left-menu">
+                    <div class="index-img"> 
+                        <img class="index-logo" width="150px" src="css/Cubik.png" >
                     </div>
-                    <div class="icons-div-2 icons-div">
 
-                        <!-- account -->
-                        <a href="login.jsp" class="icons-link""><i style="margin-left: 10px" class="fa-solid fa-user fa-2xl"></i><p>Login</p></a>
-
-                        <!-- String -->
-                        <a href="strings.jsp" class="icons-link""><i style="margin-left: 10px" class="fa-solid fa-book fa-2xl"></i><p style="margin-left: -5px" >Strings</p></a>
-                    </div>
                 </div>
+                <div class="index-right-menu">
+                    <ul class="i-menu"> 
+                        <li class="top-li i-menu-li"><a href="register.jsp">Register</a> </li>
+                        <li class="i-menu-li"><a href="login.jsp">Login</a></li>
+                        <li class="i-menu-li"><a href="strings.jsp">Strings</a></li>
+                    </ul>
+                </div>
+
+
+
             </div>
-            <!--</div>-->
-        </div >
-
-        <!--        <div class="wrapper">
-                                <nav class="nav"> 
-                                    <ul class="menu"> 
-                                        <li><a href="register.jsp">register</a> </li>
-                                        <li><a href="login.jsp">login</a></li>
-                                        <li><a href="strings.jsp">strings</a></li>
-                                    </ul>
-                                </nav> 
-        
-                    
-                </div>
-        -->
+        </div>
         <div id="clock" class="footer"></div>
-    </body>
+    </div>
+
+
+    <!--        <div class="wrapper">
+                            <nav class="nav"> 
+                                <ul class="menu"> 
+                                    <li><a href="register.jsp">register</a> </li>
+                                    <li><a href="login.jsp">login</a></li>
+                                    <li><a href="strings.jsp">strings</a></li>
+                                </ul>
+                            </nav> 
+    
+                
+            </div>
+    -->
+
+</body>
 
 </html>

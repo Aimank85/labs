@@ -55,19 +55,7 @@
                 }
             }
         %>
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        
             <nav class="nav"> 
                 <img class="logo" width="100px" height="45px" src="css/logo.png" >
                 <ul class="menu"> 
@@ -86,6 +74,6 @@
                 </table>
             </div>
             <div id="clock" class="footer"></div>
-        </div>
+    
     </body>
 </html>

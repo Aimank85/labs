@@ -29,19 +29,7 @@
             session.invalidate();
         %>
 
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        
                        
             <nav class="nav"> 
                 <img class="logo" width="100px" height="45px"src="css/logo.png" >
@@ -51,6 +39,6 @@
             </nav>
 
             <h2 class="termination">Your account has been deleted successfully!</h2>
-        </div>
+        
     </body>
 </html>

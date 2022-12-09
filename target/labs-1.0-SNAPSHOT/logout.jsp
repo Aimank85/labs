@@ -7,20 +7,7 @@
         <link rel="stylesheet" href="css/style1.css"/>
     </head>
     <body onload="startTime()">
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            
+
             <nav class="nav"> 
                 <img class="logo" width="100px" height="45px"src="css/logo.png" >
                 <ul class="menu">
@@ -29,6 +16,6 @@
             </nav>
 
             <h2 class="termination">You have been logged out - Thank you!</h2>
-        </div>
+       
     </body>
 </html>

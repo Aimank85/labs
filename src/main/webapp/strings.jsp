@@ -14,20 +14,7 @@
         <link rel="stylesheet" href="css/style1.css"/>
     </head>
     <body onload="startTime()">
-        <div class="area" >
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
+        
             <nav class="nav string-nav">
                 <div class="strings-left-menu">
                     <img class="logo" width="100px" height="45px" src="css/logo.png" style="margin-top: -13px;" >
@@ -52,6 +39,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </body>
 </html>
