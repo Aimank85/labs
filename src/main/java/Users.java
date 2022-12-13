@@ -41,4 +41,15 @@ public class Users {
     public void setUsers(List<User> users) {
         this.users = users;
     }
+    
+    public void delete(int ID){
+        List<User> temp = new ArrayList();
+        User toDelete = user(ID);
+        
+        if(toDelete != null){
+            temp.add(toDelete);
+        }
+        
+        users.removeAll(temp);
+    }
 }

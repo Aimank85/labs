@@ -21,22 +21,31 @@
             User user = (User) session.getAttribute("user");
 
             // Retrieving data from XML
-            int ID = user.getID();
-            String name = user.getName();
-            String email = user.getEmail();
-            String password = user.getPassword();
-            String dob = user.getDOB();
+            int ID;
+            String name;
+            String email;
+            String password;
+            String dob;
 
             if (submitted != null && submitted.equals("submitted")) {
                 users = userDAO.getUsers();
 
-                user = (User) session.getAttribute("user");
-
                 // Retrieving data from session
-                name = request.getParameter("name");
                 email = request.getParameter("email");
+
+                user = users.user(email);
+
+                ID = Integer.parseInt(request.getParameter("ID"));
+                name = request.getParameter("name");
+                
                 password = request.getParameter("password");
                 dob = request.getParameter("dob");
+
+//                ID = user.getID();
+//                name = user.getName();
+//                password = user.getPassword();
+//                dob = user.getDOB();
+
                 user.update(ID, name, email, password, dob);
 
                 userDAO.update(users, user);
@@ -44,12 +53,24 @@
                 session.setAttribute("user", user);
 
             } else {
-                users = userDAO.getUsers();
-                ID = user.getID();
-                name = user.getName();
-                email = user.getEmail();
-                password = user.getPassword();
-                dob = user.getDOB();
+                String userViewEmail = request.getParameter("email");
+                User userView = users.user(userViewEmail);
+
+                if (userView != null) {
+                    user = userView;
+                    ID = user.getID();
+                    name = user.getName();
+                    email = user.getEmail();
+                    password = user.getPassword();
+                    dob = user.getDOB();
+                } else {
+                    ID = user.getID();
+                    name = user.getName();
+                    email = user.getEmail();
+                    password = user.getPassword();
+                    dob = user.getDOB();
+//                    user = (User) session.getAttribute("user");
+                }
             }
         %>
         <div class="wrapper">
@@ -85,10 +106,10 @@
                         <!--<li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>-->
                         <!--<li class="i-menu-li"><a href="login.jsp">Login</a></li>-->
                         <!--<li class="i-menu-li"><a href="delete.jsp">Delete</a></li>-->
-<!--                        <input class="button" type="submit" value="Update" />
-                        <a class="button" href="main.jsp">Main</a>
-                                        
-                                        <a class="button" href="delete.jsp">Delete</a>-->
+                        <!--                        <input class="button" type="submit" value="Update" />
+                                                <a class="button" href="main.jsp">Main</a>
+                                                                
+                                                                <a class="button" href="delete.jsp">Delete</a>-->
                     </ul>
                 </div>
 

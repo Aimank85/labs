@@ -81,7 +81,7 @@
             <td><xsl:value-of select="price"/></td>
            
             <td>
-                <div style="width:300px;background:white;height:12px;">
+                <div style="width:100px;background:white;height:12px;">
                     <div style="width:{10*rating}px;background:#f8d3c5;height:12px;"></div>                    
                 </div>
             </td>

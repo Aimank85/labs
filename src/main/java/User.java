@@ -50,6 +50,10 @@ public class User {
     public boolean match(String email) {
         return this.email.equals(email);
     }
+    
+    public boolean match(String email, String password) {
+        return this.email.equals(email) && this.password.equals(password);
+    }
 
     public int getID() {
         return ID;

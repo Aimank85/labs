@@ -38,6 +38,7 @@
                         <li class="top-li i-menu-li"><a href="register.jsp">Register</a> </li>
                         <li class="i-menu-li"><a href="login.jsp">Login</a></li>
                         <li class="i-menu-li"><a href="strings.jsp">Strings</a></li>
+                        <li class="i-menu-li"><a href="admin.jsp">Admin</a></li>
                     </ul>
                 </div>
 

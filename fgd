@@ -1,0 +1,13 @@
+<table>
+    <thead>
+        <th>ID</th><th>Name</th><th>Email</th><th>DOB</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>100000</td><td>John Smith</td><td><a href="http://localhost:8080/labs/account.jsp?email=john.smith@uts.com">john.smith@uts.com</a></td><td></td>
+        </tr>
+        <tr>
+            <td>100001</td><td>David Jones</td><td><a href="http://localhost:8080/labs/account.jsp?email=alen.david@example.com">alen.david@example.com</a></td><td></td>
+        </tr>
+    </tbody>
+</table>
