@@ -27,26 +27,26 @@ public class AdminDAO implements Serializable{
         return filePath;
     }
 
-    public Admins getAdmin(){
+    public Admins getAdmins(){
         return this.admins;
     }
 
-    public void Admin(Admin admins) {
+    public void setAdmins(Admins admins) {
         this.admins = admins;
     }
     
     public void setFilePath(String fileName) throws JAXBException, FileNotFoundException{
         this.filePath = fileName;
-        JAXBContext jc = JAXBContext.newInstance(Admin.class);
+        JAXBContext jc = JAXBContext.newInstance(Admins.class);
         Unmarshaller um = jc.createUnmarshaller();
         FileInputStream fin = new FileInputStream(fileName);
-        admins = (Admin) um.unmarshal(fin);
+        admins = (Admins) um.unmarshal(fin);
     }
     
-    public void save(Admin admins, String filename) throws JAXBException, FileNotFoundException, IOException{
+    public void save(Admins admins, String filename) throws JAXBException, FileNotFoundException, IOException{
         this.admins = admins;
         this.filePath = filename;
-        JAXBContext jc = JAXBContext.newInstance(Admin.class);
+        JAXBContext jc = JAXBContext.newInstance(Admins.class);
         Marshaller m = jc.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         FileOutputStream fout = new FileOutputStream(filename);
@@ -56,16 +56,16 @@ public class AdminDAO implements Serializable{
     }
     
     // Crud Operations
-    public Admin read(String filename) throws JAXBException, FileNotFoundException{
+    public Admins read(String filename) throws JAXBException, FileNotFoundException{
         this.filePath = filename;
-        JAXBContext jc = JAXBContext.newInstance(Admin.class);
+        JAXBContext jc = JAXBContext.newInstance(Admins.class);
         Unmarshaller um = jc.createUnmarshaller();
         FileInputStream fin = new FileInputStream(filename);
-        admins = (Admin) um.unmarshal(fin);
+        admins = (Admins) um.unmarshal(fin);
         return admins;
     }
     
-    public void update(Admin admins, Admin other) throws JAXBException, IOException{
+    public void update(Admins admins, Admin other) throws JAXBException, IOException{
         this.admins = admins;
         this.admins.remove(other);
         save(this.admins, filePath);
@@ -73,9 +73,9 @@ public class AdminDAO implements Serializable{
         save(this.admins, filePath);
     }
     
-    public void delete(Admin admins,Admin admin) throws JAXBException, IOException{
+    public void delete(Admins admins,Admin adsmin) throws JAXBException, IOException{
         this.admins = admins;
-        this.admins.remove(admin);
+        this.admins.remove(adsmin);
         save(this.admins, filePath);
     }
 }
