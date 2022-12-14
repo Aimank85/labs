@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/admin.xsl"?>
+
+
+<admins>
+    <admin>
+        <ID>100000</ID>
+        <name>John Smith</name>
+        <email>john.smith@uts.com</email>
+        <password>Helloworld123</password>
+        <dob>05/12/1990</dob>        
+    </admin>
+    <admin>
+        <ID>100001</ID>
+        <name>David Jones</name>
+        <email>alen.david@example.com</email>
+        <password>Demopass123</password>
+        <dob>11/07/2002</dob>        
+    </admin>
+</admins>
