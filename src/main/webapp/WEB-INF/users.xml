@@ -10,13 +10,13 @@
         <name>John Smith</name>
         <email>john.smith@uts.com</email>
         <password>Helloworld123</password>
-        <dob>05/12/1990</dob>        
+        <dob>1990-12-11</dob>        
     </user>
     <user>
         <ID>100001</ID>
         <name>David Jones</name>
         <email>alen.david@example.com</email>
         <password>Demopass123</password>
-        <dob>11/07/2002</dob>        
+        <dob>2002-12-11</dob>        
     </user>
 </users>

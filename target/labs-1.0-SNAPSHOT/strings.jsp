@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Strings</title>
         <script type="text/javascript" src="js/index.js"></script>
+        
         <link rel="stylesheet" href="css/style1.css"/>
     </head>
     <body onload="startTime()">

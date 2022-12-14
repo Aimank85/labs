@@ -23,8 +23,13 @@
 
         <%
             User user = (User) session.getAttribute("user");
+            
+//            String email = (String) session.getAttribute("email");
+
             Users users = userDAO.getUsers();
 
+//            User user = users.user(email);
+                    
             userDAO.delete(users, user);
             session.invalidate();
         %>

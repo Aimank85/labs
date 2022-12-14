@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="js/index.js"></script>
-        <title>Login Page</title>
-        <link rel="stylesheet" href="css/style1.css"/>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/sytle2.css"/>
     </head>
     <body onload="startTime()">
 
@@ -19,16 +19,6 @@
             String error = (String) session.getAttribute("error");
         %>
 
-
-
-        <!--       <nav class="nav"> -->
-        <!--                <img class="logo" width="100px" height="45px"src="css/logo.png" >-->
-        <!--                <ul class="menu"> 
-                            <li><a href="index.jsp">home</a> </li>
-                            <li><a href="register.jsp">register</a></li>-->
-        <!--                    <li><a href="strings.jsp">strings</a></li>
-                        </ul>
-                    </nav>-->
         <div class="wrapper">
             <div class="menu-list">
                 <div class="index-left-menu">
@@ -59,18 +49,8 @@
                         <li class="i-menu-li"><a href="strings.jsp">Strings</a></li>
                     </ul>
                 </div>
-
-
-
-
             </div>
         </div>
-
-
-
-
         <div id="clock" class="footer"></div>
-
-
     </body>
 </html>

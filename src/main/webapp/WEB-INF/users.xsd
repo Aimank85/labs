@@ -31,11 +31,11 @@
         </xs:restriction>
     </xs:simpleType> 
     
-    <xs:simpleType name="dobFormat">
+<!--    <xs:simpleType name="dobFormat">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{2}/\d{2}/\d{4}" />
         </xs:restriction>
-    </xs:simpleType>
+    </xs:simpleType>-->
     
     <xs:simpleType name="numberFormat">
         <xs:restriction base="xs:integer">
@@ -53,8 +53,8 @@
                             <xs:element type="nameFormat" name="name"/>                   
                             <xs:element type="emailFormat" name="email"/>
                             <xs:element type="passwordFormat" name="password"/>
-                            <xs:element type="dobFormat" name="dob"/> 
-                            <xs:element name="blogs" maxOccurs="1" minOccurs="0">
+                            <!--<xs:element type="dobFormat" name="dob"/>--> 
+<!--                            <xs:element name="blogs" maxOccurs="1" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="blog" maxOccurs="unbounded" minOccurs="0">
@@ -67,7 +67,7 @@
                                         </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
-                            </xs:element>                         
+                            </xs:element>                         -->
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

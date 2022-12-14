@@ -11,8 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/style1.css"/>
         <title>Home page</title>
+        <script type="text/javascript" src="js/index.js"></script>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
-
     </head>
     <body onload="startTime()">
         <!--        <div class="index-img"> 
@@ -38,28 +38,13 @@
                         <li class="top-li i-menu-li"><a href="register.jsp">Register</a> </li>
                         <li class="i-menu-li"><a href="login.jsp">Login</a></li>
                         <li class="i-menu-li"><a href="strings.jsp">Strings</a></li>
-                        <li class="i-menu-li"><a href="admin.jsp">Admin</a></li>
+                        <li class="i-menu-li"><a href="admin-login.jsp">Admin</a></li>
                     </ul>
                 </div>
 
             </div>
             <div id="clock" class="footer"></div>
         </div>
-
-
-        <!--        <div class="wrapper">
-                                <nav class="nav"> 
-                                    <ul class="menu"> 
-                                        <li><a href="register.jsp">register</a> </li>
-                                        <li><a href="login.jsp">login</a></li>
-                                        <li><a href="strings.jsp">strings</a></li>
-                                    </ul>
-                                </nav> 
-        
-                    
-                </div>
-        -->
-
     </body>
 
 </html>

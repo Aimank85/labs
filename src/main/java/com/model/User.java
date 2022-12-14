@@ -11,7 +11,7 @@ public class User implements Serializable{
     private String name;
     private String email;
     private String password;
-    private String DOB;
+    private String dob;
 
     public User() {
     }
@@ -21,7 +21,7 @@ public class User implements Serializable{
         this.name = name;
         this.email = email;
         this.password = password;
-        this.DOB = DOB;
+        this.dob = DOB;
     }
 
     public void update(int ID, String name, String email, String password, String DOB) {
@@ -29,7 +29,7 @@ public class User implements Serializable{
         this.name = name;
         this.email = email;
         this.password = password;
-        this.DOB = DOB;
+        this.dob = DOB;
     }
 
     public boolean login(String email, String password) {
@@ -81,10 +81,10 @@ public class User implements Serializable{
     }
 
     public String getDOB() {
-        return DOB;
+        return dob;
     }
 
     public void setDOB(String DOB) {
-        this.DOB = DOB;
+        this.dob = DOB;
     }
 }
