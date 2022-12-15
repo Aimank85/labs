@@ -16,7 +16,7 @@ body{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;  */
-    background: url(teal.jpg) no-repeat center center fixed;
+    background: url(bg1.jpg) no-repeat center center fixed;
     background-size: 100% 100%;
     color : white;
     font-family: Glacial indifference, sans-serif;
@@ -51,6 +51,15 @@ body{
 
 .logo{
     margin-left: 10px;
+}
+.tagline {
+    font-family: Glacial indifference, sans-serif;
+    font-weight: regular;
+    color: white;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: -60px
+    
 }
 
 .menu{
@@ -360,12 +369,14 @@ input:active{
     margin-top: 10vh;
     font-weight: 400;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
 }
 
 .index-left-menu {
     /*border: 1px solid red;*/
     width: 49%;
+/*    background: url("https://www.kindpng.com/picc/m/138-1383242_geometric-background-png-background-geometric-pattern-png-transparent.png") no-repeat center center fixed;
+    background-size: 100% 100%;*/
 }
 
 .index-right-menu {
@@ -408,7 +419,8 @@ input:active{
 
 
 .social-media {
-    margin: auto;
+    margin-left: 180px;
+    margin-top: 200px
     width: 50%;
     /*border: 1px solid red;*/
     display: flex;

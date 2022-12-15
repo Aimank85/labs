@@ -25,7 +25,11 @@
                     <div class="index-img"> 
                         <img class="index-logo" width="150px" src="css/Cubik.png" >
                     </div>
-
+                    <div class= "tagline">
+                        <h2>
+                            Smart Tech Solutions
+                        </h2> 
+                    </div>
                     <div class="social-media">
                         <a href="index.jsp" class="social-media-icon"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
                         <a href="index.jsp" class="social-media-icon"><i class="fa-brands fa-instagram fa-2xl"></i></a>
