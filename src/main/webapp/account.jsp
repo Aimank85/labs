@@ -6,7 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Account</title>
-        <link rel="stylesheet" href="css/sytle2.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body onload="startTime()">
@@ -79,55 +79,6 @@
                     <div class="signup">
                         <form method="POST" action="account.jsp">
                             <table class="input-table">
-                                <caption class="caption">Account <br> <span class="succes-message"><%= (submitted != null) ? "Updated is Successful" : "" %></span></caption>
-                                <tr><td>ID: </td><td><input type="text" name="ID" value="<%= ID %>" readonly="true" /></td></tr>
-                                <tr><td>Name: </td><td><input type="text" name="name" value="<%= name %>" /></td></tr>
-                                <tr><td>Email: </td><td><input type="text" name="email" value="<%= email %>" readonly="true"/></td></tr>
-                                <tr><td>Password: </td><td><input type="password" name="password" value="<%= password %>" /></td></tr>
-                                <tr><td>DOB: </td><td><input type="date" name="dob" value="<%= dob %>"/></td></tr>
-                                <tr><input type="hidden" name="submitted" value="submitted"></tr>
-                                <tr>
-                                    <td> </td>
-                                    <td class="form-actions">
-                                        <% if (emailView != null) { %>
-                                        <a class="button" href="index.jsp">Home</a> 
-                                        <%} else { %>
-                                        <a class="button" href="main.jsp">Dashboard</a>
-                                        <%}%>
-                                        <input class="button" type="submit" value="Update" />
-                                        <a class="button" href="delete.jsp">Delete</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-                <div class="index-right-menu">
-                    <ul class="i-menu"> 
-                        <!--<li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>-->
-                        <!--<li class="i-menu-li"><a href="login.jsp">Login</a></li>-->
-                        <!--<li class="i-menu-li"><a href="delete.jsp">Delete</a></li>-->
-                        <!--                        <input class="button" type="submit" value="Update" />
-                                                <a class="button" href="main.jsp">Main</a>
-                                                                
-                                                                <a class="button" href="delete.jsp">Delete</a>-->
-                    </ul>
-                </div>
-
-
-
-            </div>
-
-            <div id="clock" class="footer"></div>
-        </div>
-
-        <!--            <nav class="nav"> 
-                        <img class="logo" width="100px" height="45px" src="css/logo.png" >
-                    </nav>
-        
-                    <div class="signup">
-                        <form method="POST" action="account.jsp">
-                            <table class="input-table">
                                 <caption class="caption">Account <br> <span class="succes-message"><%= (submitted != null) ? "Updated is Successful" : ""%></span></caption>
                                 <tr><td>ID: </td><td><input type="text" name="ID" value="<%= ID%>" readonly="true" /></td></tr>
                                 <tr><td>Name: </td><td><input type="text" name="name" value="<%= name%>" /></td></tr>
@@ -137,16 +88,39 @@
                                 <tr><input type="hidden" name="submitted" value="submitted"></tr>
                                 <tr>
                                     <td> </td>
-                                    <td class="form-actions">
-                                        <a class="button" href="main.jsp">Main</a>
+                                    <td class="form-actions" style="">
                                         <input class="button" type="submit" value="Update" />
+                                        <% if (emailView != null) {%>
+                                        <a class="button" href="http://localhost:8080/labs/delete.jsp?email=<%= email%>">Delete</a> 
+                                        <%} else { %>
                                         <a class="button" href="delete.jsp">Delete</a>
+                                        <%}%>
+
                                     </td>
                                 </tr>
                             </table>
                         </form>
                     </div>
-                
-                <div id="clock" class="footer"></div>-->
+                </div>
+                <div class="index-right-menu">
+                    <ul class="i-menu"> 
+
+                        <% if (emailView != null) { %>
+                        <li class="top-li i-menu-li"><a class="button" href="admin.jsp">Accounts</a></li>
+                        <%} else { %>
+                        <li class="top-li i-menu-li"><a class="button" href="main.jsp">Dashboard</a></li>
+                        <%}%>
+                        <!--<li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>-->
+                        <!--<li class="i-menu-li"><a href="login.jsp">Login</a></li>-->
+                        <!--<li class="i-menu-li"><a href="delete.jsp">Delete</a></li>-->
+                        <!--                        <input class="button" type="submit" value="Update" />
+                                                <a class="button" href="main.jsp">Main</a>
+                                                                
+                                                                <a class="button" href="delete.jsp">Delete</a>-->
+                    </ul>
+                </div>
+            </div>
+            <div id="clock" class="footer"></div>
+        </div>
     </body>
 </html>

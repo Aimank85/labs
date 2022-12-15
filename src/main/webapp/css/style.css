@@ -16,7 +16,7 @@ body{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;  */
-    background: url(teal.jpg)no-repeat center center fixed;
+    background: url(teal.jpg) no-repeat center center fixed;
     background-size: 100% 100%;
     color : white;
     font-family: Glacial indifference, sans-serif;
@@ -61,8 +61,6 @@ body{
     width: 300px;
     margin-left: 30px;
     font-size: 1.3em;
-    /*    padding-bottom: 5px;*/
-
 } 
 
 .menu li{
@@ -106,7 +104,7 @@ input:active{
     letter-spacing: 1px;
     color: rgba(255,255,255,0.7);
     margin: auto;
-    margin-top: 5vh;
+    /*margin-top: 5vh;*/
 
     font-weight: 400;
     background-color: transparent;
@@ -114,7 +112,7 @@ input:active{
 }
 .signup form {
     /*border: 1px solid red;*/
-    width:70%;
+    width:90%;
     margin: auto;
     padding: 5px;
 }
@@ -191,7 +189,7 @@ input:active{
 }
 
 .form-actions{
-
+    margin-left: -20px;
 }
 
 .form-actions:hover{

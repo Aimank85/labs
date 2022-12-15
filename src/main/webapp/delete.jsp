@@ -13,7 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Delete</title>
-        <link rel="stylesheet" href="css/style1.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <% String filename = application.getRealPath("/WEB-INF/users.xml");%>
@@ -23,27 +23,39 @@
 
         <%
             User user = (User) session.getAttribute("user");
-            
-//            String email = (String) session.getAttribute("email");
 
+//            String email = (String) session.getAttribute("email");
             Users users = userDAO.getUsers();
 
 //            User user = users.user(email);
-                    
             userDAO.delete(users, user);
-            session.invalidate();
+//            session.invalidate();
+            String emailView = request.getParameter("email");
         %>
 
-            <nav class="nav"> 
-                <div class="index-img"> 
+        <div class="wrapper">
+            <div class="menu-list">
+                <div class="delete-left-menu">
+                    <div class="index-img"> 
                         <img class="logo" width="200px" src="css/Cubik.png" >
-                    </div>
-                <ul class="menu">
-                    <li><a href="index.jsp">home</a> </li>
-                </ul>
-            </nav>
+                    </div>        
 
-            <h2 class="termination">Your account has been deleted successfully!</h2>
-        
+                    <div class="delete-paragraph">
+                        <h2 class="termination">Your account has been deleted successfully!</h2>
+                    </div>
+                </div>
+
+                <div class="delete-right-menu">
+                    <ul class="i-menu">
+                        <% if (emailView != null) { %>
+                        <li class="top-li i-menu-li"><a href="admin.jsp">Accounts</a> </li>
+                            <%} else {%>
+                        <li class="top-li i-menu-li"><a href="index.jsp">Home</a> </li>
+                            <%}%>
+                    </ul>
+                </div>        
+
+            </div>
+        </div>
     </body>
 </html>

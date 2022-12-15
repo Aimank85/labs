@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/style1.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <script type="text/javascript" src="js/index.js"></script>
         <title>Welcome</title>
     </head>

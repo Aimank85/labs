@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/style1.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <title>Home page</title>
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>

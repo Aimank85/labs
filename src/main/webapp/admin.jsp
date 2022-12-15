@@ -7,7 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin View</title>
-        <link rel="stylesheet" href="css/sytle2.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <%

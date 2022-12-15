@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="js/index.js"></script>
         <title>Login</title>
-        <link rel="stylesheet" href="css/sytle2.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body onload="startTime()">
 

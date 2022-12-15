@@ -12,7 +12,7 @@
         <script type="text/javascript" src="js/index.js"></script>
         <title>Sign up</title>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/sytle2.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body onload="startTime()">
         <%

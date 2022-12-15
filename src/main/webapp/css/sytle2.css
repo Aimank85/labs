@@ -367,7 +367,7 @@ input:active{
 
 .index-left-menu {
     /*border: 1px solid red;*/
-    width: 50%;
+    width: 49%;
 }
 
 .index-right-menu {
@@ -493,7 +493,7 @@ input:active{
 /*      Logout      */
 
 .termination {
-    margin-top: 100px; 
+    margin-top: 0px; 
     margin-left: 50px; 
     color: #fff;
 }
@@ -546,3 +546,17 @@ input:active{
     /*padding: 10px 20px;*/
 }
 
+        /*  delete page */
+.delet-left-menu{
+    /*border: 1px solid red;*/
+    width: 65%;
+}
+
+.delete-right-menu {
+    /*border: 1px solid green;*/
+    width: 35%;
+}
+
+.delete-paragraph{
+    /*margin-top: -20px;*/
+}

@@ -12,7 +12,7 @@
         <title>Strings</title>
         <script type="text/javascript" src="js/index.js"></script>
         
-        <link rel="stylesheet" href="css/style1.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body onload="startTime()">
 
