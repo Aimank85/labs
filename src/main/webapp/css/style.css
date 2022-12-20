@@ -16,7 +16,7 @@ body{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;  */
-    background: url(bg1.jpg) no-repeat center center fixed;
+    background: url(bg.jpg) no-repeat center center fixed;
     background-size: 100% 100%;
     color : white;
     font-family: Glacial indifference, sans-serif;
@@ -58,7 +58,7 @@ body{
     color: white;
     text-align: center;
     margin-left: 70px;
-    margin-top: -60px
+    margin-top: -20px
     
 }
 
@@ -117,7 +117,7 @@ input:active{
 
     font-weight: 400;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 }
 .signup form {
     /*border: 1px solid red;*/
@@ -276,7 +276,7 @@ input:active{
     margin-top: 10vh;
     font-weight: 400;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 }
 
 .string-nav{
@@ -369,7 +369,7 @@ input:active{
     margin-top: 10vh;
     font-weight: 400;
     background-color: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
 }
 
 .index-left-menu {
@@ -420,8 +420,8 @@ input:active{
 
 .social-media {
     margin-left: 180px;
-    margin-top: 200px
-    width: 50%;
+    margin-top: 100px;
+    width: 40%;
     /*border: 1px solid red;*/
     display: flex;
     justify-content: space-between;
@@ -455,7 +455,7 @@ input:active{
     font-weight: 400;
     /*background-color: rgba(255,255,255,0.1);*/
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 
     /*position: relative;*/
 }
@@ -532,7 +532,7 @@ input:active{
 
     font-weight: 400;
     background-color: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
     /*border: 1px solid red;*/
 }
 

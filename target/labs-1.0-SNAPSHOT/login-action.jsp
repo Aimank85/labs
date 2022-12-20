@@ -12,8 +12,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login Action</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <title>Login Action</title>
     </head>
     <body onload="startTime()">
         <% String filename = application.getRealPath("/WEB-INF/users.xml");%>

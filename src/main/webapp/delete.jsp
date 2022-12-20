@@ -11,9 +11,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <jsp:include page="header.jsp" flush="true"/>
         <title>Delete</title>
-        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
         <% String filename = application.getRealPath("/WEB-INF/users.xml");%>
@@ -47,11 +46,7 @@
 
                 <div class="delete-right-menu">
                     <ul class="i-menu">
-                        <% if (emailView != null) { %>
-                        <li class="top-li i-menu-li"><a href="admin.jsp">Accounts</a> </li>
-                            <%} else {%>
                         <li class="top-li i-menu-li"><a href="index.jsp">Home</a> </li>
-                            <%}%>
                     </ul>
                 </div>        
 

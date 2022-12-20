@@ -11,10 +11,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <link rel="stylesheet" href="css/style.css"/>
-        <script type="text/javascript" src="js/index.js"></script>
+        <jsp:include page="header.jsp" flush="true"/>
         <title>Main</title>
     </head>
     <body onload="startTime()" >
@@ -61,8 +58,8 @@
                 <div class="index-right-menu">
                     <ul class="i-menu"> 
                         
-                        <li class="top-li i-menu-li"><a href="account.jsp">account</a> </li>
-                        <li class="i-menu-li"><a href="logout.jsp">logout</a></li>
+                        <li class="top-li i-menu-li"><a href="account.jsp">Account</a> </li>
+                        <li class="i-menu-li"><a href="logout.jsp">Logout</a></li>
 
                     </ul>
                 </div>

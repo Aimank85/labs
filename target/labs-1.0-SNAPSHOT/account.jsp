@@ -4,10 +4,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <jsp:include page="header.jsp" flush="true"/>
         <title>Account</title>
-        <link rel="stylesheet" href="css/style.css"/>
-        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body onload="startTime()">
         <% String filename = application.getRealPath("/WEB-INF/users.xml");%>
@@ -90,11 +88,8 @@
                                     <td> </td>
                                     <td class="form-actions" style="">
                                         <input class="button" type="submit" value="Update" />
-                                        <% if (emailView != null) {%>
-                                        <a class="button" href="http://localhost:8080/labs/delete.jsp?email=<%= email%>">Delete</a> 
-                                        <%} else { %>
+                                        
                                         <a class="button" href="delete.jsp">Delete</a>
-                                        <%}%>
 
                                     </td>
                                 </tr>
@@ -104,12 +99,7 @@
                 </div>
                 <div class="index-right-menu">
                     <ul class="i-menu"> 
-
-                        <% if (emailView != null) { %>
-                        <li class="top-li i-menu-li"><a class="button" href="admin.jsp">Accounts</a></li>
-                        <%} else { %>
                         <li class="top-li i-menu-li"><a class="button" href="main.jsp">Dashboard</a></li>
-                        <%}%>
                         <!--<li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>-->
                         <!--<li class="i-menu-li"><a href="login.jsp">Login</a></li>-->
                         <!--<li class="i-menu-li"><a href="delete.jsp">Delete</a></li>-->

@@ -8,11 +8,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <jsp:include page="header.jsp" flush="true"/>
         <title>Strings</title>
-        <script type="text/javascript" src="js/index.js"></script>
-        
-        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body onload="startTime()">
 

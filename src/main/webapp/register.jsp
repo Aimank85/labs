@@ -8,11 +8,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="js/index.js"></script>
-        <title>Sign up</title>
+        <jsp:include page="header.jsp" flush="true"/>
         <script src="https://kit.fontawesome.com/8095c6edcb.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css"/>
+        <title>Sign up</title>
     </head>
     <body onload="startTime()">
         <%
