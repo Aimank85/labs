@@ -75,7 +75,7 @@
                         <img class="logo" width="150px" src="css/Cubik.png" >
                     </div>
                     <div class="signup">
-                        <form method="POST" action="account.jsp">
+                        <form method="POST" action="admin-account.jsp">
                             <table class="input-table">
                                 <caption class="caption">Account <br> <span class="succes-message"><%= (submitted != null) ? "Updated is Successful" : ""%></span></caption>
                                 <tr><td>ID: </td><td><input type="text" name="ID" value="<%= ID%>" readonly="true" /></td></tr>
@@ -89,7 +89,7 @@
                                     <td class="form-actions" style="">
                                         <input class="button" type="submit" value="Update" />
                                         <a class="button" href="admin-delete.jsp">Delete</a>
-                                        
+
 
                                     </td>
                                 </tr>
@@ -101,7 +101,7 @@
                     <ul class="i-menu"> 
 
                         <li class="top-li i-menu-li"><a class="button" href="admin.jsp">Accounts</a></li>
-                        
+
                         <!--<li class="top-li i-menu-li"><a href="main.jsp">Main</a> </li>-->
                         <!--<li class="i-menu-li"><a href="login.jsp">Login</a></li>-->
                         <!--<li class="i-menu-li"><a href="delete.jsp">Delete</a></li>-->

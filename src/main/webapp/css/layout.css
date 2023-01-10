@@ -22,6 +22,14 @@ body{
     font-family: Glacial indifference, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 .inner-wrapper{
     padding-top: 70px;
 }
